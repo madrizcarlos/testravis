@@ -5,10 +5,7 @@
 #    - ~/.npm
 #node_js:
 #  - '12'
-#git:
-#  depth: 3
-#script:
-#  - yarn build
+
 
 language: php
 
@@ -40,7 +37,10 @@ after_success:
 
 #after_failure:
 
-
+git:
+  depth: 3
+script:
+  - yarn build
 
 deploy:
   provider: pages
