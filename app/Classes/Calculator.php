@@ -13,7 +13,7 @@ class CalculatorTest extends TestCase
     /**
      * Calculator class instance
      *
-     * @var \Projects\Maths\Calculator
+     * @var \app\Classes\Calculator
      */
     private $calc;
 
