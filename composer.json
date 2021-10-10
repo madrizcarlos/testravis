@@ -1,13 +1,26 @@
 {
-  "name": "phpunit",
-  "version": "v1.0.0",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "ankurk91",
-      "homepage": "https://ankurk91.github.io/"
-    }
-  ],
+    "name": "composer/composer",
+    "type": "library",
+    "description": "Composer helps you declare, manage and install dependencies of PHP projects. It ensures you have the right stack everywhere.",
+    "keywords": [
+        "package",
+        "dependency",
+        "autoload"
+    ],
+    "homepage": "https://getcomposer.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nils Adermann",
+            "email": "naderman@naderman.de",
+            "homepage": "https://www.naderman.de"
+        },
+        {
+            "name": "Jordi Boggiano",
+            "email": "j.boggiano@seld.be",
+            "homepage": "https://seld.be"
+        }
+    ],
   "require": {
     "php": "^7.1.3"
   },
