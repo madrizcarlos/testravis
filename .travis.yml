@@ -26,11 +26,11 @@ before_install:
   - composer self-update
 
 install:
-  - composer install --no-interaction 
+  - composer install
 
 # Testing the app (see phpunit.xml) for configs, generating Code Coverage report
 script:
-- composer test -- --coverage-clover=coverage.xml
+#- composer test -- --coverage-clover=coverage.xml
 
 #after_script:
 
