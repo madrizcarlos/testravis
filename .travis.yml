@@ -31,6 +31,7 @@ cache:
     - ~/.npm
 node_js:
   - '12'
+ 
  - yarn build
 
 
