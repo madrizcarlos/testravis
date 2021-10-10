@@ -3,7 +3,7 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Projects\Maths\Calculator;
+use app\Classes\Calculator;
 
 /**
  * Class CalculatorTest.
@@ -13,7 +13,7 @@ class CalculatorTest extends TestCase
     /**
      * Calculator class instance
      *
-     * @var \Projects\Maths\Calculator
+     * @var \app\Classes\Calculator
      */
     private $calc;
 
