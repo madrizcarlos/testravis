@@ -1,3 +1,11 @@
+#lenguage: node_js
+#cache:
+#  directories:
+ #   - node_modules
+#    - ~/.npm
+#node_js:
+#  - '12'
+
 language: php
 
 # Define the php versions against we want to test our code
@@ -25,9 +33,6 @@ script:
 
 #after_script:
  - yarn build
-
-
- 
 deploy:
   provider: pages
   skip_cleanup: true
