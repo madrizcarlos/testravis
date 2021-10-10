@@ -20,7 +20,7 @@ php:
 # Note: Code coverage requires php-xDebug extension enabled on CI server
 
 install:
-- travis_retry composer install --no-interaction --no-suggest
+- travis_retry composer install --no-interaction 
 
 # Testing the app (see phpunit.xml) for configs, generating Code Coverage report
 script:
