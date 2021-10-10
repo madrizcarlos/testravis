@@ -26,22 +26,20 @@ install:
   - composer install
 
 # Testing the app (see phpunit.xml) for configs, generating Code Coverage report
+git:
+  depth: 3
+  
 script:
 #- composer test -- --coverage-clover=coverage.xml
 
 #after_script:
 
-after_success:
-# Submit coverage report to https://codecov.io
-- bash <(curl -s https://codecov.io/bash)
-
 #after_failure:
 
-git:
-  depth: 3
-script:
-  - yarn build
+#after_success:
+ - yarn build
 
+ 
 deploy:
   provider: pages
   skip_cleanup: true
