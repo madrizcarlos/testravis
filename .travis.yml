@@ -1,10 +1,4 @@
-#lenguage: node_js
-#cache:
-#  directories:
-#    - node_modules
-#    - ~/.npm
-#node_js:
-#  - '12'
+
 
 
 language: php
@@ -37,6 +31,13 @@ script:
 #after_failure:
 
 #after_success:
+lenguage: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+node_js:
+  - '12'
  - yarn build
 
  
