@@ -3,7 +3,7 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Projects\Maths\Calculator;
+use app\Classes\Calculator;
 
 /**
  * Class CalculatorTest.
