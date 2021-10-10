@@ -1,60 +1,13 @@
 <?php
-
-namespace Tests;
-
-use PHPUnit\Framework\TestCase;
-use Calculator;
-
-/**
- * Class CalculatorTest.
- */
-class CalculatorTest extends TestCase
-{
-    /**
-     * Calculator class instance
-     *
-     * @var \app\Classes\Calculator
-     */
-    private $calc;
-
-    public function __construct()
-    {
-        $this->calc = new Calculator();
-        parent::__construct();
+    use PHPUnit\Framework\TestCase;
+ 
+    class CalculatorTest extends TestCase {
+ 
+        public function testIsSumCorrect(){
+            $calc = new Calculator();
+            $result = $calc->sum(1,2.5);
+            $expected = 3.5;
+            $this->assertSame($expected,$result);       
+        }
+ 
     }
-
-    public function testInstanceCalculator()
-    {
-        $this->assertInstanceOf(Calculator::class, $this->calc);
-    }
-
-    public function testAdd()
-    {
-        $value = $this->calc->add(2, 3);
-        $this->assertEquals($value, 5);
-    }
-
-    public function testMultiply()
-    {
-        $value = $this->calc->multiply(2, 3);
-        $this->assertEquals($value, 6);
-    }
-
-    public function testSubtract()
-    {
-        $value = $this->calc->subtract(4, 2);
-        $this->assertEquals($value, 2);
-    }
-
-    public function testNormalDivide()
-    {
-        $value = $this->calc->divide(4, 2);
-        $this->assertEquals($value, 2);
-    }
-
-    public function testDivisorCanNotBeZero()
-    {
-        $this->expectException(\InvalidArgumentException::class);
-        $this->calc->divide(4, 0);
-    }
-}
